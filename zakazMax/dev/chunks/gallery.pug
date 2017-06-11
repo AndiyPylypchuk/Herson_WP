@@ -1,0 +1,24 @@
+section.section-gallery
+	.wrap-title
+		.container
+			.row
+				.col-md-12
+					h1.h1.services_word__title Галерея
+	.container
+		.row
+			.col-lg-9.col-md-8
+				h3.h3 фотоальбом по тематике 
+				.gallery
+					.gallery__slider.js-gallery-slider
+						div.gallery__item
+							img(src="/img/gallery-slider.png")
+						div.gallery__item
+							img(src="/img/best-work1.png")
+						div.gallery__item
+							img(src="/img/gallery-slider.png")
+
+			.col-lg-3.col-md-4
+				.sidebar
+					include ../chunks/box-sidebar.pug
+					a.btn.btn_red.btn_md.btn_order оформить заказ
+include ../chunks/gallery-panel.pug

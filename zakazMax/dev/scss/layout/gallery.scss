@@ -1,0 +1,61 @@
+a.btn_order{
+	padding: 12px 15px;
+}
+.section-gallery{
+	.gallery{
+		margin-bottom: 55px;
+		&__item{
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0; 
+				margin: 0 auto;
+			}
+		}
+	}
+	.slick-track, .slick-list{
+		min-height: 550px;
+	}
+	.slick-arrow{
+		padding: 100px 10px;
+		background-color: rgba(31, 30, 30, 0.31);
+	}
+	.btn-next.slick-disabled .arrow-right:before, .btn-prev.slick-disabled .arrow-left:before{
+		opacity: 0.5;
+	}
+	.arrow-right{
+		position: relative;
+		height: 20px;
+		width: 20px;
+	}
+	.arrow-right:before{
+		content: '';
+		background-image: url(../img/arrow_white.png);
+		height: 55px;
+		width: 28px;
+		display: block;
+	}
+	.arrow-left:before{
+		content: '';
+		background-image: url(../img/arrow_white.png);
+		transform: rotate(180deg);
+		height: 55px;
+		width: 28px;
+		display: block;
+	}
+	.btn-next, .btn-prev{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		cursor: pointer;
+	}
+	.btn-next{
+		right: 0px;
+	}
+	.btn-prev{
+		left: 0px;
+	}
+}
