@@ -3,17 +3,17 @@
 		background-color: #d4d5d5;
 		padding: 0;
 		.wrap-nav{
-			padding: 8px 0;
+			padding: 6px 0;
 		}
 		.nav{
 			padding-top: 0;
 		}
 		.logo{
 			a{
-				height: 56px;
-				width: 62px;
+				height: 42px;
+				width: 46px;
 				&:before{
-					background-size: 63px;
+					background-size: 47px;
 				}
 			}
 		}
@@ -35,12 +35,12 @@
 	a{
     display: block;
     position: relative;
-    height: 65px;
-    width: 71px;
+    height: 48px;
+    width: 53px;
 		&:before{
 			content: '';
 			background-image: url("../img/logo_header.png");
-			background-size: 72px;
+			background-size: 54px;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -49,21 +49,21 @@
 		}
 	}
 		float: left;
-		padding-left: 20px;
+		padding-left: 15px;
 }
 header.header{
 	background-color: #f0e5c7;
-	padding: 10px 0;
+	padding: 7px 0;
 }
 .nav{
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 7px;
 	font-size: 0;
 	li{
 		list-style-type: none;
 		display: inline-block;
-		padding: 20px 2.5%;
-		font-size: 16px;
+		padding: 15px 2.5%;
+		font-size: 12px;
 		a{
 			color: #000;
 			text-decoration: none;

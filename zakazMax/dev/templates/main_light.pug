@@ -1,14 +1,14 @@
 doctype html
 include ../chunks/mixin.pug
 html(lang="ru").no-js
-		head
-			include ../chunks/head.pug
-		block body
-			.page-wrapper#page-wrapper
-				.header_main-wrapper
-					include ../chunks/header.pug
-				.page-body#page-body
-					include ../chunks/main_light.pug
-				include ../chunks/footer.pug
+	head
+		include ../chunks/head.pug
+	body
+		.page-wrapper#page-wrapper
+			.header_main-wrapper
+				include ../chunks/header.pug
+			.page-body#page-body
+				include ../chunks/main_light.pug
+			include ../chunks/footer.pug
 
 		include ../chunks/scripts.pug

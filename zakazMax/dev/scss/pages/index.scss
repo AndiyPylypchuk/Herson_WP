@@ -17,17 +17,17 @@
 	background-color: #f0e5c7;
 }
 .h1{
-	font-size: 72px;
+	font-size: 54px;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-family: 'HelveticaNeue-Thin', Arial, sans-serif;
 	position: relative;
 	padding-top: 15px;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 .h2{
 	color: #353535;
-	font-size: 60px;
+	font-size: 45px;
 	text-transform: uppercase;
 	font-family: 'HelveticaNeue-Thin', Arial, sans-serif;
 }
@@ -60,7 +60,7 @@
 	}
 	&__btn{
 		text-align: center;
-		padding: 45px 0 70px;
+		padding: 35px 0 52px;
 	}
 	.item{
 		display: flex;
@@ -76,11 +76,11 @@
 			width: 100%;
 		}
 		div{
-			width: 185px;
+			width: 139px;
 		}
 		&__title{
 			font-family: "HelveticaNeue-Thin", Arial, sans-serif;
-			font-size: 21px;
+			font-size: 16px;
 			text-transform: uppercase;
 			padding: 10px;
 			letter-spacing: 1px;
@@ -107,13 +107,13 @@
 }
 .btn{
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 16px;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
 	// height: 38px;
-	padding: 12px 18px;
+	padding: 10px 15px;
 	text-align: center;
 	font-weight: 400;
 	background-color: #e74c3c;
@@ -130,13 +130,13 @@
 	color: #fff!important;
 }
 .btn_lg{
-	padding: 20px 60px;
+	padding: 15px 45px;
 }
 .btn_red{
 	background-color: #ee0000;
 }
 .btn_md{
-	padding: 12px 20px;
+	padding: 10px 15px;
 }
 @media screen and (max-width: 1300px){
 	.services{
@@ -151,24 +151,24 @@
 @media screen and (max-width: 1125px){
 	.services {
 		.item__title{
-				font-size: 20px;
+				font-size: 15px;
 		}
 	}
 	.services__btn {
-		padding: 25px 0 55px;
+		padding: 18px 0 41px;
 	}
 	.h1{
-		font-size: 64px;
+		font-size: 48px;
 	}
 	.h2{
-		font-size: 52px;
+		font-size: 39px;
 	}
 	.best-work__title{
-		padding-top: 57px;
-		padding-bottom: 47px; 
+		padding-top: 42px;
+		padding-bottom: 35px; 
 	}
 	.subtitle{
-		font-size: 21px;
+		font-size: 15px;
 	}
 }
 @media screen and (max-width: 992px){
@@ -177,54 +177,54 @@
 			width: 50%;
 		}
 		.item__title{
-				font-size: 19px;
+				font-size: 14px;
 		}
 	}
 	.btn_lg {
-		padding: 16px 56px;
+		padding: 12px 42px;
 	}
 	.h1{
-		font-size: 57px;
+		font-size: 42px;
 		padding-left: 10px;
 	}
 	.h2{
-		font-size: 46px;
+		font-size: 32px;
 	}
 	.subtitle{
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.best-work__title {
-		padding-top: 47px;
-		padding-bottom: 20px;
+		padding-top: 35px;
+		padding-bottom: 15px;
 	}
 }
 @media screen and (max-width: 768px){
 	.services {
 		.item__title{
-			font-size: 16px;		
+			font-size: 12px;		
 		}
 	}
 	.btn_lg {
-		padding: 12px 50px;
+		padding: 10px 36px;
 	}
 	.btn{
-		font-size: 22px;
+		font-size: 16px;
 	}
 	.services__btn {
-		padding: 15px 0 50px;
+		padding: 10px 0 36px;
 	}
 	.h1{
-		font-size: 52px;
+		font-size: 39px;
 	}
 	.h2{
-		font-size: 44px;
+		font-size: 33px;
 	}
 	.subtitle {
-		font-size: 18px;
+		font-size: 13px;
 	}
 	.best-work__title {
-		padding-top: 37px;
-		padding-bottom: 18px;
+		padding-top: 27px;
+		padding-bottom: 13px;
 	}
 }
 @media screen and (max-width: 544px){
@@ -232,35 +232,35 @@
 		.item{
 			width: 100%;
 			&__img{
-				max-width: 180px;
+				max-width: 135px;
 			}
 		}
 		.item__title{
-			font-size: 14px;		
+			font-size: 12px;		
 		}
 	}
 	.btn {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.h1 {
-		font-size: 46px;
+		font-size: 34px;
 	}
 	.h2{
-		font-size: 40px;
+		font-size: 30px;
 	}
 	.subtitle {
-		font-size: 16px;
+		font-size: 12px;
 	}
 	.best-work__title {
-		padding-top: 27px;
-		padding-bottom: 14px;
+		padding-top: 20px;
+		padding-bottom: 10px;
 	}
 }
 @media screen and (max-width: 480px){
 	.services__btn {
-		padding: 15px 0 40px;
+		padding: 12px 0 30px;
 	}
 	.btn{
-		font-size: 18px;
+		font-size: 14px;
 	}
 }

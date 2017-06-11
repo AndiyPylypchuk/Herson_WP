@@ -1,9 +1,9 @@
 a.btn_order{
-	padding: 12px 15px;
+	padding: 10px 12px;
 }
 .section-gallery{
 	.gallery{
-		margin-bottom: 55px;
+		margin-bottom: 41px;
 		&__item{
 			img{
 				position: absolute;
@@ -16,10 +16,10 @@ a.btn_order{
 		}
 	}
 	.slick-track, .slick-list{
-		min-height: 550px;
+		min-height: 412px;
 	}
 	.slick-arrow{
-		padding: 100px 10px;
+		padding: 75px 7px;
 		background-color: rgba(31, 30, 30, 0.31);
 	}
 	.btn-next.slick-disabled .arrow-right:before, .btn-prev.slick-disabled .arrow-left:before{
@@ -27,22 +27,22 @@ a.btn_order{
 	}
 	.arrow-right{
 		position: relative;
-		height: 20px;
-		width: 20px;
+		height: 15px;
+		width: 15px;
 	}
 	.arrow-right:before{
 		content: '';
 		background-image: url(../img/arrow_white.png);
-		height: 55px;
-		width: 28px;
+		height: 41px;
+		width: 21px;
 		display: block;
 	}
 	.arrow-left:before{
 		content: '';
 		background-image: url(../img/arrow_white.png);
 		transform: rotate(180deg);
-		height: 55px;
-		width: 28px;
+		height: 41px;
+		width: 21px;
 		display: block;
 	}
 	.btn-next, .btn-prev{
