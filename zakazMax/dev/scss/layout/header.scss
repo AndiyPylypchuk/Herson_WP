@@ -1,7 +1,24 @@
 .header_main-wrapper{
 	header.header{
 		background-color: #d4d5d5;
+		padding: 0;
+		.wrap-nav{
+			padding: 8px 0;
+		}
+		.nav{
+			padding-top: 0;
+		}
+		.logo{
+			a{
+				height: 56px;
+				width: 62px;
+				&:before{
+					background-size: 63px;
+				}
+			}
+		}
 	}
+	
 }
 .flex-row{
 	display: flex;
@@ -15,6 +32,22 @@
 	align-items: center;
 }
 .logo{
+	a{
+    display: block;
+    position: relative;
+    height: 65px;
+    width: 71px;
+		&:before{
+			content: '';
+			background-image: url("../img/logo_header.png");
+			background-size: 72px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
 		float: left;
 		padding-left: 20px;
 }

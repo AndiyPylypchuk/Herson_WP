@@ -105,6 +105,7 @@ $(document).ready(function(){
     nextArrow:'<div class="btn-next"><i class="arrow arrow-right"></i></div>',
     prevArrow:'<div class="btn-prev"><i class="arrow arrow-left"></i></div>',
     fade: true,
+    infinite: false,
     adaptiveHeight: true
   });
 });
