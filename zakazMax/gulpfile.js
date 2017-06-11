@@ -79,8 +79,8 @@ gulp.task('sass', function() {
             // errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(sass({
-            includePaths: require('bourbon').includePaths,
-            outputStyle: 'compressed'
+            includePaths: require('bourbon').includePaths
+            //outputStyle: 'compressed'
         }))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
