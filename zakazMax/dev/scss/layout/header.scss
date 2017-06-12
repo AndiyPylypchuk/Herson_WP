@@ -9,6 +9,7 @@
 			padding-top: 0;
 		}
 		.logo{
+			padding: 0;
 			a{
 				height: 42px;
 				width: 46px;
@@ -25,6 +26,9 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+}
+.flex-wrap{
+	flex-wrap: wrap;
 }
 .flex-column{
 	display: flex;

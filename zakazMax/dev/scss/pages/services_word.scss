@@ -1,14 +1,14 @@
 .services_word{
-	padding-bottom: 35px;
+	padding-bottom: 26px;
 	.article{
 		&__img{
 			margin-left: -15px;
 		}
 		&__text{
 			width: 300px;
-			margin-left: 30px;
+			margin-left: 26px;
 			p:first-child{
-				padding-bottom: 25px;
+				padding-bottom: 18px;
 			}
 		}
 	}
@@ -16,47 +16,47 @@
 .h3{
 	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 	color: #404040;
-	font-size: 29px;
+	font-size: 22px;
 	text-transform: uppercase;
-	padding: 30px 0 30px 40px;
+	padding: 22px 0 22px 30px;
 	font-weight: 400;
 }
 p{
 	font-family: 'corbel', Arial, sans-serif;
-	font-size: 18px;
+	font-size: 13px;
 	color: #161616;
 	letter-spacing: 1px;
 }
 .sidebar{
-	padding-top: 82px;
+	padding-top: 61px;
 }
 .h4{
 	font-family: 'corbel', Arial, sans-serif;
 	color: #161616;
-	font-size: 24px;
+	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 400;
-	padding: 20px 25px;
+	padding: 15px 18px;
 }
 .gallery-block{
 	background-color: #f0e5c7;
-	padding: 30px 0 35px;
+	padding: 22px 0 26px;
 	.gallery{
 		ul{
 			flex-wrap: wrap;
-			max-width: 1065px;
+			max-width: 798px;
 			margin: 0 auto;
 			li{
-				margin: 6px 0px;
+				margin: 5px 0px;
 				cursor: pointer;
 			}
 		}
 	}
 }
 .hits{
-	padding-bottom: 50px;
+	padding-bottom: 37px;
 	.best-work__title{
-		padding-top: 65px;
+		padding-top: 45px;
 	}
 }
 @media screen and (max-width: 1125px){
@@ -66,11 +66,11 @@ p{
 		}
 	}
 	.services_word{
-		padding-bottom: 35px;
+		padding-bottom: 26px;
 		.article{
 			&__img{
 				margin-left: 0px;
-				padding-bottom: 10px;
+				padding-bottom: 7px;
 			}
 			&__text{
 				width: 100%;
@@ -79,26 +79,26 @@ p{
 		}
 	}
 	.btn_md{
-		font-size: 17px;
+		font-size: 12px;
 	}
 	.h4{
-		padding: 15px 25px
+		padding: 12px 18px
 	}
 }
 @media screen and (max-width: 992px){
 	p{
-		font-size: 16px;
+		font-size: 12px;
 	}
 	.h3{
-    padding: 25px 0 25px 10px;
-    font-size: 26px;
+    padding: 18px 0 18px 7px;
+    font-size: 18px;
 	}
 	.services_word{
-		padding-bottom: 30px;
+		padding-bottom: 22px;
 		.article{
 			&__text{
 				p:first-child{
-					padding-bottom: 10px;
+					padding-bottom: 7px;
 				}
 			}
 		}

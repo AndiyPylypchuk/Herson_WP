@@ -108,4 +108,15 @@ $(document).ready(function(){
     infinite: false,
     adaptiveHeight: true
   });
+  $('.js-main_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    dots: false,
+    // focusOnSelect: true,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    infinite: true
+  });
 });
