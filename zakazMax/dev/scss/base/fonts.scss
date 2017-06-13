@@ -89,3 +89,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Fontawesome';
+	src: url('../css/fonts/fontawesome-webfont.eot');
+	src: local('O'),
+	url('../css/fonts/fontawesome-webfont.woff') format('woff'),
+	url('../css/fonts/fontawesome-webfont.woff2') format('woff2'),
+	url('../css/fonts/fontawesome-webfont.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
