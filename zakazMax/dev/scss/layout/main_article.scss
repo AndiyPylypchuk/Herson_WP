@@ -10,7 +10,17 @@
 	padding-left: 15%;
 	position: relative;
 	&__img{
-		padding: 45px 0;
+		margin: 45px 0;
+		overflow: hidden;
+		img{
+			opacity: 1;
+			transition: all .14s linear;
+    	width: 100%!important;
+		}
+		img:hover{
+			transform: scale(1.2);
+			opacity: 0.85;
+		}
 	}
 	&__date{
 		display: block;

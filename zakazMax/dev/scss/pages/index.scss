@@ -67,6 +67,7 @@
 	.item{
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		text-decoration: none;
 		color: #000;
 		font-weight: 700;
@@ -87,15 +88,16 @@
 			padding: 10px;
 			letter-spacing: 1px;
 			transition: all .3s ease-out;
+			word-wrap: break-word;
 		}
 	}
 	.item:hover{
-		background-color: #ee0000;
 		img{
 			color: #fff!important;
 		}
 		.item__title{
 			color: #fff;
+			background-color: #ee0000;
 		}
 		.item__img{
 			background-color: #fff;
@@ -175,9 +177,6 @@
 }
 @media screen and (max-width: 992px){
 	.services{
-		.item{
-			width: 50%;
-		}
 		.item__title{
 				font-size: 14px;
 		}
@@ -202,6 +201,9 @@
 }
 @media screen and (max-width: 768px){
 	.services {
+		.item{
+			width: 50%;
+		}
 		.item__title{
 			font-size: 12px;		
 		}
@@ -232,7 +234,6 @@
 @media screen and (max-width: 544px){
 	.services {
 		.item{
-			width: 100%;
 			&__img{
 				max-width: 135px;
 			}
@@ -264,5 +265,10 @@
 	}
 	.btn{
 		font-size: 14px;
+	}
+	.services {
+		.item{
+			width: 100%;
+		}
 	}
 }

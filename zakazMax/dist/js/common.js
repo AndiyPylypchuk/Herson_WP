@@ -120,3 +120,17 @@ $(document).ready(function(){
     infinite: true
   });
 });
+var toggleMenuMob = (function(){
+
+  var $btnOpen = $(".js-open-menu_mob");
+  var $mobMenu = $('.js-mob-menu');
+  var $wrapMobMenu = $('.js-wrap-mob-menu');
+
+  $btnOpen.on("click", function(e){
+    $(this).toggleClass('active');
+    $mobMenu.toggleClass('active');
+    $wrapMobMenu.toggleClass('active');
+    $('body').toggleClass('active');
+  });
+
+})();
