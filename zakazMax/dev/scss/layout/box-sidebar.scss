@@ -1,3 +1,4 @@
+
 .box{
 	max-width: 198px;
 	border: 1px solid #c4c4c4;
@@ -71,5 +72,39 @@
 				padding: 7px 0;
 			}
 		}
+	}
+}
+@media (max-width: 767px){
+	.box{
+		margin-bottom: 27px;
+		max-width: 100%;
+		width: 48%;
+		margin-right: 2%;
+		float: left;
+		ul{
+			li:after{
+				max-width: 100%;
+			}
+		}
+	}
+	.box:nth-child(2n){
+		margin-right: 0%;
+		margin-left: 2%;
+	}
+	.box:nth-child(2n+1){
+		clear: left;
+	}
+}
+@media (max-width: 620px){
+	.box{
+		float: none !important;
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto!important;
+		margin-right: auto!important;
+		
+	}
+	.box:nth-child(2n+1){
+		clear: both ; 
 	}
 }

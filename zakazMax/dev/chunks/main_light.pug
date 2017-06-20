@@ -126,13 +126,28 @@ section.info-grafic
 			.info-grafic__wrap
 				.info-grafic__title
 					h2.h2_main инфо графика
-				.img
-					img(src="../img/grafics.png")
-				.info-grafic__box
-					.text_top.
-						Здесь вы можете увидеть как мы день ото дня улучшаем, увеличиваем, наращиваем, оттачиваем и доводим до совершенства.
-					.text_bottom.
-						Здесь вы можете увидеть ак мы день ото дня улучшаем, увеличиваем, наращиваем, оттачиваем и доводим до совершенства.
+				.info-grafic__content
+					.img
+						img(src="../img/grafics.png")
+					.info-grafic__box
+						p.text_top.
+							Здесь вы можете увидеть как мы день ото дня улучшаем, увеличиваем, наращиваем, оттачиваем и доводим до совершенства.
+						p.text_bottom.
+							Здесь вы можете увидеть как мы день ото дня улучшаем, увеличиваем, наращиваем, оттачиваем и доводим до совершенства.
+section.main_gallery
+	.container
+		.row
+			.main_gallery_bg
+			.main_gallery__content
+				.wrap-section-nav.wrap-section-nav_top
+					a.icon_section-nav(href="#")
+				h2.h2_main Галерея
+				p.main_gallery__subtext.
+					здесь вы можете увидеть варианты наших работ и убедится в том, с какой любовью и ентузиазмом мы делаем для вас счастливые предметы, или что то типа того.
+				.wrapper-gallery
+					include ../chunks/gallery-panel.pug
+				.wrap-section-nav
+					a.icon_section-nav(href="#")
 section.clients.clients_bg
 	.container.border
 			.row
@@ -154,40 +169,40 @@ section.clients.clients_bg
 						img(src="../img/kodak.png")
 section.new
 	.container.border
-			.row
-				h2.h2_main Новое
-				.grid-wrap
-					.col1
-						.grid-elem
-							.art.col_big
-								a.art__img.art__img_big(href="#")
-									img(src="../img/img10.png")
-								.art__wrap
-									p.art__info.info1
-										a(href="#") материалы
-									h4.art__header
-										a(href="#") Мы можем и больше
-									p.art__info.info2 Март 2017
-									p.art__text.
-										В условиях современной рыночной ситуации популяризация нового торгового имени и формирование положительного отношения к нему потенциальной клиентской аудитории, не менее значимый элемент успешной деятельности фирмы, как  и верно разработанная маркетинговая стратегия, направленная на выведение на просторы рынка нового продукта.
-					.col2
-						.grid-elem
-							.art
-								.art__img
-									img(src="../img/img9.png")
-								.art__wrap
-									p.art__info.info1
-										a(href="#") творчество
-									h4.art__header
-										a(href="#") растворимые бусы из берилия
-									p.art__info.info2 Март 2017
-						.grid-elem
-							.art
-								.art__wrap
-									p.art__info.info1
-										a(href="#") дизайн
-									h4.art__header
-										a(href="#") Мода на раннюю обрезку швов
-									p.art__info.info2 Март 2017
-								.art__img
-									img(src="../img/img1.png")
+		.row
+			h2.h2_main Новое
+			.grid-wrap
+				.col1
+					.grid-elem
+						.art.col_big
+							a.art__img.art__img_big(href="#")
+								img(src="../img/img10.png")
+							.art__wrap
+								p.art__info.info1
+									a(href="#") материалы
+								h4.art__header
+									a(href="#") Мы можем и больше
+								p.art__info.info2 Март 2017
+								p.art__text.
+									В условиях современной рыночной ситуации популяризация нового торгового имени и формирование положительного отношения к нему потенциальной клиентской аудитории, не менее значимый элемент успешной деятельности фирмы, как  и верно разработанная маркетинговая стратегия, направленная на выведение на просторы рынка нового продукта.
+				.col2
+					.grid-elem
+						.art
+							.art__img
+								img(src="../img/img9.png")
+							.art__wrap
+								p.art__info.info1
+									a(href="#") творчество
+								h4.art__header
+									a(href="#") растворимые бусы из берилия
+								p.art__info.info2 Март 2017
+					.grid-elem
+						.art
+							.art__wrap
+								p.art__info.info1
+									a(href="#") дизайн
+								h4.art__header
+									a(href="#") Мода на раннюю обрезку швов
+								p.art__info.info2 Март 2017
+							.art__img
+								img(src="../img/img1.png")

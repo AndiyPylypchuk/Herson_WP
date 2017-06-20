@@ -1,9 +1,6 @@
 .services_word{
 	padding-bottom: 26px;
 	.article{
-		&__img{
-			margin-left: -15px;
-		}
 		&__text{
 			width: 300px;
 			margin-left: 26px;
@@ -23,7 +20,7 @@
 }
 p{
 	font-family: 'corbel', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	color: #161616;
 	letter-spacing: 1px;
 }
@@ -44,11 +41,12 @@ p{
 	.gallery{
 		ul{
 			flex-wrap: wrap;
-			max-width: 798px;
+			max-width: 1071px;
 			margin: 0 auto;
 			li{
 				margin: 5px 0px;
 				cursor: pointer;
+				max-width: 164px;
 			}
 		}
 	}
@@ -90,8 +88,8 @@ p{
 		font-size: 12px;
 	}
 	.h3{
-    padding: 18px 0 18px 7px;
-    font-size: 18px;
+		padding: 18px 0 18px 7px;
+		font-size: 18px;
 	}
 	.services_word{
 		padding-bottom: 22px;

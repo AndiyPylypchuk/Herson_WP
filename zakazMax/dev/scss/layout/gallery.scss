@@ -4,20 +4,26 @@ a.btn_order{
 .section-gallery{
 	.gallery{
 		margin-bottom: 41px;
+		&__slider{
+			width: 100%;
+			height: 455px;
+		}
 		&__item{
+			height: 455px;
+			float: left;
+			background-size: cover;
+			position: relative;
 			img{
 				position: absolute;
-				top: 0;
+				margin: auto;
 				left: 0;
+				top: 0;
+				bottom: 0;
 				right: 0;
-				bottom: 0; 
-				margin: 0 auto;
 			}
 		}
 	}
-	.slick-track, .slick-list{
-		min-height: 412px;
-	}
+
 	.slick-arrow{
 		padding: 75px 7px;
 		background-color: rgba(31, 30, 30, 0.31);
@@ -35,6 +41,7 @@ a.btn_order{
 		background-image: url(../img/arrow_white.png);
 		height: 41px;
 		width: 21px;
+		background-size: 21px;
 		display: block;
 	}
 	.arrow-left:before{
@@ -43,6 +50,7 @@ a.btn_order{
 		transform: rotate(180deg);
 		height: 41px;
 		width: 21px;
+		background-size: 21px;
 		display: block;
 	}
 	.btn-next, .btn-prev{
@@ -57,5 +65,95 @@ a.btn_order{
 	}
 	.btn-prev{
 		left: 0px;
+	}
+}
+@media (max-width: 991px){
+	.section-gallery{
+		.gallery{
+			margin-bottom: 41px;
+			&__slider{
+				height: 315px;
+			}
+			&__item{
+				height: 315px;
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	.section-gallery{
+		.gallery{
+			margin-bottom: 0px;
+			&__slider{
+				height: 400px;
+			}
+			&__item{
+				height: 400px;
+			}
+		}
+		.sidebar{
+			padding-top: 40px;
+			padding-bottom: 15px;
+			.btn_order{
+				float: left;
+				clear: left;
+			}
+		}
+	}
+	.sidebar:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.section-gallery .slick-arrow{
+		padding: 45px 7px;
+	}
+}
+@media (max-width: 600px){
+	.section-gallery{
+		.gallery{
+			margin-bottom: 0px;
+			&__slider{
+				height: 315px;
+			}
+			&__item{
+				height: 315px;
+			}
+		}
+	}
+}
+@media (max-width: 480px){
+	.section-gallery{
+		.gallery{
+			&__slider{
+				height: 264px;
+			}
+			&__item{
+				height: 264px;
+			}
+		}
+	}
+	.section-gallery .slick-arrow{
+		padding: 15px 7px;	
+	} 
+	.section-gallery .arrow-right:before, .section-gallery .arrow-left:before{
+		width: 15px;
+		background-size: 15px;
+		height: 28px;
+	}
+	.sidebar{
+		padding-top: 0;
+	}
+}
+@media (max-width: 420px){
+	.section-gallery{
+		.gallery{
+			&__slider{
+				height: 185px;
+			}
+			&__item{
+				height: 185px;
+			}
+		}
 	}
 }
