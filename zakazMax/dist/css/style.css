@@ -4697,9 +4697,6 @@ p {
   border-left: 10px solid #d2a26f;
   padding-left: 42px;
   transition: all .3s ease-out;
-  -ms-transform: translateX(-10%);
-  transform: translateX(-10%);
-  opacity: 0;
   filter: alpha(opacity=0); }
   .main_slider .item__title .h2 {
     color: #7d7d7d;
@@ -4744,18 +4741,6 @@ p {
       background-image: url(../img/pngsprite/sprite.png);
       background-position: -311px -57px;
       background-size: 170px; }
-
-.main_slider .slick-slide {
-  transition: opacity 1500ms ease !important; }
-
-.main_slider .slick-list {
-  height: 100%; }
-
-.main_slider .slider__item.slick-active .item__title {
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-  filter: alpha(opacity=100);
-  opacity: 1; }
 
 .h2_main {
   font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
@@ -5052,16 +5037,18 @@ p {
   padding-top: 1px;
   position: relative;
   z-index: 2; }
-  .info-grafic:before {
-    content: '';
-    background-image: url(../img/img_man.png);
-    width: 250px;
-    display: block;
-    height: 354px;
-    background-size: 250px;
-    position: absolute;
-    left: 140px;
-    top: 36px; }
+  .info-grafic .img-man {
+    position: relative; }
+    .info-grafic .img-man:before {
+      content: '';
+      background-image: url(../img/img_man.png);
+      width: 250px;
+      display: block;
+      height: 354px;
+      background-size: 250px;
+      position: absolute;
+      left: 140px;
+      top: 36px; }
   .info-grafic .text_bottom {
     font-size: 12px;
     max-width: 210px; }
@@ -5134,6 +5121,8 @@ p {
   .main_gallery__content {
     margin-top: 280px;
     padding-bottom: 100px; }
+  .main_gallery__content_main-ra {
+    margin-top: 190px; }
   .main_gallery__subtext {
     text-transform: uppercase;
     padding: 0 20px;
@@ -5169,7 +5158,8 @@ section {
   position: absolute;
   width: 100%;
   opacity: 0.5;
-  z-index: 0; }
+  z-index: 0;
+  left: 0; }
   .main_gallery_bg:before {
     background: #fff;
     content: "";
@@ -5213,6 +5203,8 @@ section {
     top: -15%; }
   .main_gallery__content {
     margin-top: 180px; }
+  .main_gallery__content_main-ra {
+    margin-top: 90px; }
   .main_services .services__group {
     padding: 0; }
   .new .grid-wrap .art__wrap {
@@ -5256,7 +5248,7 @@ section {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding-right: 20px; }
-  .info-grafic:before {
+  .info-grafic .img-man:before {
     display: none; } }
 
 @media screen and (max-width: 992px) {

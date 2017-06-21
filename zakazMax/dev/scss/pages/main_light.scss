@@ -41,8 +41,8 @@
 			border-left: 10px solid #d2a26f;
 			padding-left: 42px;
 			transition: all .3s ease-out;
-			transform: translateX(-10%);
-			opacity: 0;
+			// transform: translateX(-10%);
+			// opacity: 0;
 			filter: alpha(opacity=0);
 			.h2{
 				color: #7d7d7d;
@@ -94,21 +94,21 @@
 			}
 		}
 	}
-	.slick-slide{
-		transition: opacity 1500ms ease !important;
-	}
-	.slick-list{
-		height: 100%;
-	}
-	.slider__item.slick-active{
-		.item{
-			&__title{
-				transform: translateX(0%); 
-				filter: alpha(opacity=100);
-				opacity: 1;
-			}
-		}
-	}
+	// .slick-slide{
+	// 	transition: opacity 1500ms ease !important;
+	// }
+	// .slick-list{
+	// 	height: 100%;
+	// }
+	// .slider__item.slick-active{
+	// 	.item{
+	// 		&__title{
+	// 			transform: translateX(0%); 
+	// 			filter: alpha(opacity=100);
+	// 			opacity: 1;
+	// 		}
+	// 	}
+	// }
 }
 .h2_main{
 	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
@@ -306,9 +306,6 @@
 				padding: 4px 24px;
 				text-transform: uppercase;
 			}
-			// .art .Info2 {
-			// 		margin: 0 -24px 12px -24px;
-			// }
 			* {
 				transition: all .3s ease-out;
 			}
@@ -458,16 +455,19 @@
 	padding-top: 1px;
 	position: relative;
 	z-index: 2;
-	&:before{
-		content: '';
-		background-image: url(../img/img_man.png);
-		width: 250px;
-		display: block;
-		height: 354px;
-		background-size: 250px;
-		position: absolute;
-		left: 140px;
-		top: 36px;
+	.img-man{
+		position: relative;
+		&:before{
+			content: '';
+			background-image: url(../img/img_man.png);
+			width: 250px;
+			display: block;
+			height: 354px;
+			background-size: 250px;
+			position: absolute;
+			left: 140px;
+			top: 36px;
+		}
 	}
 	.text_bottom{
 		font-size: 12px;
@@ -545,6 +545,9 @@
 		margin-top: 280px;
 		padding-bottom: 100px;
 	}
+	&__content_main-ra{
+		margin-top: 190px;
+	}
 	&__subtext{
 		text-transform: uppercase;
 		padding: 0 20px;
@@ -588,6 +591,7 @@ section{
 	width: 100%;
 	opacity: 0.5;
 	z-index: 0;
+	left: 0;
 	&:before{
 		background: #fff;
 		content: "";
@@ -652,11 +656,10 @@ section{
 		&__content{
 			margin-top: 180px;
 		}
+		&__content_main-ra{
+			margin-top: 90px;
+		}
 	}
-	
-	// .container{
-	// 	padding: 0 30px;
-	// }
 	.main_services{
 		.services__group{
 			padding: 0;
@@ -727,7 +730,7 @@ section{
 				flex-direction: column-reverse;
 				padding-right: 20px;
 			}
-			&:before{
+			.img-man:before{
 				display: none;
 			}
 		}
