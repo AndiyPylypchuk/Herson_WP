@@ -1,0 +1,18 @@
+section.order-form
+	.container
+		.order-form__content
+			h1.h1.order-form__title оформить заказ	
+			.contact__form
+				form.form__validate
+					legend ваша заявка будет рассмотрена в течении ...
+					dl
+						dd
+							input.recuired(type="text" size="30" arial-required="true" recuired="recuired" value placeholder="Ф.И.О.") 
+						dd
+							input.recuired(type="email" size="30" arial-required="true" recuired="recuired" value placeholder="e-mail")
+						dd
+							input.recuired(type="text" size="60" arial-required="true" recuired="recuired" value placeholder="Тема")
+						dd
+							textarea.recuired(cols="50" rows="10" arial-required="true" recuired="recuired" placeholder="текст сообщения")
+						dd.box-btn
+							button.btn.validate(type="submit") отправить
