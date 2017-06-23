@@ -3,13 +3,18 @@ header.wrapper.header#header
 		.wrap-nav
 			.logo
 				a(href="#")
-			.mobMenu.js-wrap-mob-menu
+			.mob-menu.js-wrap-mob-menu
 				i.fa.fa-reorder.js-open-menu_mob
 				ul.js-mob-menu
 					li
 						a(href="#") главная
 					li
-						a.active(href="#") услуги
+						a.active.js-show-mobile-sub-menu(href="#") услуги
+						ul.mobile-menu__down-menu
+							li
+								a(href="#") наружная реклама
+							li
+								a(href="#") доп. услуги
 					li
 						a(href="#") галерея
 					li
@@ -18,12 +23,17 @@ header.wrapper.header#header
 						a(href="#") контакты
 					li
 						a(href="#") магазин
-			.mainMenu
+			.main-menu
 				ul.nav
 					li
 						a(href="#") главная
 					li
-						a.active(href="#") услуги
+						a.active.js-show-dropdown(href="#") услуги
+						ul.js-submenu
+							li
+								a(href="#") наружная реклама
+							li
+								a(href="#") доп. услуги
 					li
 						a(href="#") галерея
 					li

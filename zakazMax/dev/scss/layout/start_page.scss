@@ -1,19 +1,21 @@
 .start_page_bg{
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-color: #d6d6d7;
-	min-height: 16.875em;
-	background-image: url(../img/start_page_bg1.png);
-	padding: 0px 20px 0;
+}
+.cover{
+	object-fit: cover;
+	position: absolute;
+	z-index: 1;
 }
 .start_page{
-	height: 100vh;
+	height: 100%;
+	z-index: 2;
+	position: relative;
 	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 	&__content{
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		min-height: 100vh;
+		padding: 0 20px;
 		align-items: center;
 		padding-top: 40px;
 		justify-content: space-between;
@@ -64,6 +66,7 @@
 		.logo{
 			padding: 0;
 			max-width: 139px;
+			margin-right: 11.7%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -132,6 +135,9 @@
 }
 
 @media (max-width: 830px){
+	.cover{
+		min-height: 100%;
+	}
 	.start_page_bg{
 		position: relative;
 		&:before{
@@ -143,6 +149,7 @@
 			bottom: 0;
 			background-color: #fff;
 			opacity: 0.5;
+			z-index: 2;
 		}
 	}
 	.start_page{

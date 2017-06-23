@@ -13,20 +13,30 @@
       <div class="container">
         <div class="wrap-nav">
           <div class="logo"><a href="#"></a></div>
-          <div class="mobMenu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
+          <div class="mob-menu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
             <ul class="js-mob-menu">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-mobile-sub-menu" href="#">услуги</a>
+                <ul class="mobile-menu__down-menu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
               <li><a href="#">магазин</a></li>
             </ul>
           </div>
-          <div class="mainMenu">
+          <div class="main-menu">
             <ul class="nav">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-dropdown" href="#">услуги</a>
+                <ul class="js-submenu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
@@ -42,23 +52,23 @@
           <div class="order-form__content">
             <h1 class="h1 order-form__title">оформить заказ	</h1>
             <div class="contact__form">
-              <form class="form__validate">
+              <form class="form__validate" id="orderForm" method="get" action="">
                 <legend>ваша заявка будет рассмотрена в течении ...</legend>
                 <dl>
                   <dd>
-                    <input class="recuired" type="text" size="30" arial-required="true" recuired="recuired" value placeholder="Ф.И.О.">
+                    <input class="recuired" name="name" type="text" size="30" arial-required="true" value placeholder="Ф.И.О.">
                   </dd>
                   <dd>
-                    <input class="recuired" type="email" size="30" arial-required="true" recuired="recuired" value placeholder="e-mail">
+                    <input class="recuired" name="email" type="email" size="30" arial-required="true" value placeholder="e-mail">
                   </dd>
                   <dd>
-                    <input class="recuired" type="text" size="60" arial-required="true" recuired="recuired" value placeholder="Тема">
+                    <input class="recuired" name="theme" type="text" size="60" arial-required="true" value placeholder="Тема">
                   </dd>
                   <dd>
-                    <textarea class="recuired" cols="50" rows="10" arial-required="true" recuired="recuired" placeholder="текст сообщения"></textarea>
+                    <textarea class="recuired" name="textarea" cols="50" rows="10" arial-required="true" placeholder="текст сообщения"></textarea>
                   </dd>
                   <dd class="box-btn">
-                    <button class="btn validate" type="submit">отправить</button>
+                    <button class="btn validate" type="submit" value="Submit">отправить </button>
                   </dd>
                 </dl>
               </form>
@@ -87,6 +97,7 @@
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZHYvolX-ZyDTxmCCF1xyRl40IZhBPseo&amp;callback=initMap"></script>
     <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>

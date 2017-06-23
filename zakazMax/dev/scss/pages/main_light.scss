@@ -154,7 +154,7 @@
 			background-position: 39px 162px;
 		}
 		.skype:before{
-			background-position: 39px 200px;
+			background-position: 39px 201px;
 		}
 		.tw:before{
 				background-position: 185px 72px;
@@ -234,6 +234,7 @@
 				overflow: hidden;
 				padding: 24px 17px;
 				width: 33.333333%;
+				word-wrap: break-word;
 			}
 			&__img{
 				position: relative;
@@ -255,6 +256,7 @@
 				}
 				img{
 					width: 100%;
+					object-fit: cover;
 				}
 				&:hover{
 					img{
@@ -423,6 +425,8 @@
 	bottom: 40px;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 3;
+	cursor: pointer;
 }
 .icon_section-nav:hover{
 	&:after{
@@ -573,6 +577,24 @@
 				li{
 					max-width: 198px;
 					margin: 0;
+					position: relative;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						background-color: #fff;
+						opacity: 0;
+						transition: all .3s ease-out;
+					}
+				}
+				li:hover{
+					&:before{
+						opacity: 0.5;
+					}
 				}
 			}
 		}
@@ -613,6 +635,28 @@ section{
 		width: 100%;
 	}
 }
+.js-show-mobile-sub-menu{
+	position: relative;
+	&:before{
+		content: '';
+		background-image: url(../img/down-arrow.svg);
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: rotate(0deg);
+		margin-top: -7px;
+		height: 15px;
+		width: 15px;
+		background-size: 15px;
+		transition: all .3s ease-out;
+	}
+}
+.js-show-mobile-sub-menu.active{
+	&:before{
+		transform: rotate(180deg);
+	}
+}
 @media (max-width: 1610px){
 	.new{
 		.grid-wrap{
@@ -649,8 +693,10 @@ section{
 	.main_gallery_bg:before{
 		height: 300px;
 	}
-	.wrap-section-nav_top{
-		top: -15%;
+	.main_gallery{
+		.wrap-section-nav_top{
+			top: -15%;
+		}
 	}
 	.main_gallery {
 		&__content{
@@ -689,6 +735,9 @@ section{
 			}
 			.col2{
 				flex-direction: row;
+				.grid-elem{
+					width: 50%;
+				}
 			}
 			.art{
 				&__header{
@@ -759,8 +808,7 @@ section{
 		}
 	}
 	.box_social{
-		top: 50%;
-		transform: translateY(-50%);
+		top: 30%;
 	}
 	.new{
 		.grid-wrap	{
@@ -829,9 +877,11 @@ section{
 				.art{
 					border-left: none;
 				}
+				.grid-elem{
+					width: 100%;
+				}
 			}
 			.art{
-				
 				&__img_big{
 					display: none;
 				}
@@ -896,8 +946,8 @@ section{
 }
 @media (max-width: 405px){
 	.info-grafic__wrap:after {
-    top: 10%;
-    left: inherit;
-    right: -300%;
-  }
+		top: 10%;
+		left: inherit;
+		right: -300%;
+	}
 }

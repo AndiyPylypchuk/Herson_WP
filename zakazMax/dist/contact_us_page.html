@@ -13,20 +13,30 @@
       <div class="container">
         <div class="wrap-nav">
           <div class="logo"><a href="#"></a></div>
-          <div class="mobMenu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
+          <div class="mob-menu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
             <ul class="js-mob-menu">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-mobile-sub-menu" href="#">услуги</a>
+                <ul class="mobile-menu__down-menu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
               <li><a href="#">магазин</a></li>
             </ul>
           </div>
-          <div class="mainMenu">
+          <div class="main-menu">
             <ul class="nav">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-dropdown" href="#">услуги</a>
+                <ul class="js-submenu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
@@ -42,7 +52,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-offset-1 col-md-11">
-                <h1 class="h1 services_word__title">Блог</h1>
+                <h1 class="h1 services_word__title">Контакты</h1>
               </div>
             </div>
           </div>
@@ -50,7 +60,9 @@
         <div class="wrap-contact">
           <div class="container">
             <div class="contact">
-              <div class="contact__img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43826.31372586578!2d32.582786335299026!3d46.643658835854794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c41aa25d9bf967%3A0xf3a5478c8e3121fe!2z0KXQtdGA0YHQvtC9LCDQpdC10YDRgdC-0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1497078633874" width="100%" height="472" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+              <div class="contact__img">
+                <div id="map"></div>
+              </div>
               <h2 class="h3">Контакты</h2>
               <div class="contact__address"><span>Адрес:</span>
                 <address>0334566 Украина, Херсон. проспект Вечного противостояния. 12, оф 23  23 </address>
@@ -129,6 +141,7 @@
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZHYvolX-ZyDTxmCCF1xyRl40IZhBPseo&amp;callback=initMap"></script>
     <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>

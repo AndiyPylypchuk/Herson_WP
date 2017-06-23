@@ -13,20 +13,30 @@
       <div class="container">
         <div class="wrap-nav">
           <div class="logo"><a href="#"></a></div>
-          <div class="mobMenu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
+          <div class="mob-menu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
             <ul class="js-mob-menu">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-mobile-sub-menu" href="#">услуги</a>
+                <ul class="mobile-menu__down-menu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
               <li><a href="#">магазин</a></li>
             </ul>
           </div>
-          <div class="mainMenu">
+          <div class="main-menu">
             <ul class="nav">
               <li><a href="#">главная</a></li>
-              <li><a class="active" href="#">услуги</a></li>
+              <li><a class="active js-show-dropdown" href="#">услуги</a>
+                <ul class="js-submenu">
+                  <li><a href="#">наружная реклама</a></li>
+                  <li><a href="#">доп. услуги</a></li>
+                </ul>
+              </li>
               <li><a href="#">галерея</a></li>
               <li><a href="#">блог</a></li>
               <li><a href="#">контакты</a></li>
@@ -115,6 +125,7 @@
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZHYvolX-ZyDTxmCCF1xyRl40IZhBPseo&amp;callback=initMap"></script>
     <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>
