@@ -152,6 +152,34 @@ $(document).ready(function(){
         }
       }
     });
+    $('#orderFormContact').validate({
+      rules: {
+        name: {
+          required : true,
+          minlength : 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        theme: {
+          required : true
+        }
+      },
+      messages: {
+        name: {
+          required: "Введите имя",
+          minlength: "Ваше имя должно иметь больше 2 символов"
+        },
+        email: {
+          required: "Нам нужен email, что бы связаться с вами",
+          email: "Ваш email должен быть в таком формате name@domain.com"
+        },
+        theme: {
+          required: "Укажите тему сообщения"
+        }
+      }
+    });
 });
 
 var toggleMenuMob = (function(){

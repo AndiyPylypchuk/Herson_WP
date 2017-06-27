@@ -29,24 +29,24 @@ section.section-contact_us
 						span.contact-emailto 093 354545234
 				h2.h3 Контактная форма
 				.contact__form
-					form.form__validate
+					form.form__validate#orderFormContact(method="get" action="")
 						legend Send an email. All fields with an * are required.
 						dl
 							dt
 								label.hasTip.recuired Name
 									span.star &nbsp;*
 							dd
-								input.recuired(type="text" size="30" arial-required="true" recuired="recuired" value) 
+								input.recuired(name="name" type="text" size="30" arial-required="true" value) 
 							dt
 								label.hasTip.recuired Email
 									span.star &nbsp;*
 							dd
-								input.recuired(type="email" size="30" arial-required="true" recuired="recuired" value)
+								input.recuired(type="email" size="30" arial-required="true" name="email"  value)
 							dt
 								label.hasTip.recuired Subject
 									span.star &nbsp;*
 							dd
-								input.recuired(type="text" size="60" arial-required="true" recuired="recuired" value)
+								input.recuired(name="theme" type="text" size="60" arial-required="true" value)
 							dt.inline
 								label.hasTip Send copy to yuorself
 									span.star &nbsp;*
@@ -57,7 +57,7 @@ section.section-contact_us
 								label.hasTip.recuired Message
 									span.star &nbsp;*
 							dd
-								textarea.recuired(cols="50" rows="10" arial-required="true" recuired="recuired")
+								textarea.recuired(cols="50" rows="10" arial-required="true" name="textarea")
 							dd
 								button.btn.validate(type="submit") Send Email
 

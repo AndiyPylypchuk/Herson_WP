@@ -44,6 +44,8 @@
 .services{	
 	&__group{
 		padding-top: 25px;
+		max-width: 1389px;
+		margin: 0 auto;
 		ul{
 			display: flex;
 			flex-direction: row;
@@ -121,7 +123,7 @@
 	text-align: center;
 	font-weight: 400;
 	background-color: #e74c3c;
-  // line-height: 39px;
+	// line-height: 39px;
 	border: 1px solid transparent;
 	transition: all .3s ease-out;
 	font-family: "HelveticaNeue-Medium", Arial, sans-serif;

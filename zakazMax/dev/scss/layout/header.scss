@@ -111,8 +111,21 @@ header.header{
 		a:hover{
 			color: #ff0000;
 		}
-		a.active{
+	}
+	li.active{
+		>a{
 			color: #ff0000;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.section-gallery{
+		.gallery__item{
+			height: 739px !important;
+		}
+		.gallery__slider{
+			height: 739px !important;
+			max-width: 1108px;
 		}
 	}
 }

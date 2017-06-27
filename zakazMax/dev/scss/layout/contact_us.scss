@@ -19,7 +19,9 @@
 		text-transform: capitalize;
 	}
 	&__img{
-		margin: 24px 0;
+		max-width: 1448px;
+		margin: 24px auto;
+		padding: 0 20px;
 	}
 	.jicons-text {
 		color: #444;
@@ -72,6 +74,12 @@
 		input{
 			margin: 6px 0 0;
 			width: 80%;
+		}
+		dd{
+			label{
+				display: inherit;
+				color: red;
+			}
 		}
 		dt.inline, dd.inline {
 			display: inline-block!important;

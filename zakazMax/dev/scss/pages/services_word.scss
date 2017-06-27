@@ -1,12 +1,9 @@
 .services_word{
 	padding-bottom: 26px;
 	.article{
-		&__text{
-			width: 300px;
-			margin-left: 26px;
-			p:first-child{
-				padding-bottom: 18px;
-			}
+		.float-left{
+			margin: 0 26px 10px 0;
+			float: left;
 		}
 	}
 }
@@ -58,11 +55,6 @@ p{
 	}
 }
 @media screen and (max-width: 1125px){
-	.article{
-		.flex-row{
-			flex-direction: column;
-		}
-	}
 	.services_word{
 		padding-bottom: 26px;
 		.article{
@@ -94,10 +86,9 @@ p{
 	.services_word{
 		padding-bottom: 22px;
 		.article{
-			&__text{
-				p:first-child{
-					padding-bottom: 7px;
-				}
+			.float-left{
+				float: none;
+				margin-right: 0;
 			}
 		}
 	}

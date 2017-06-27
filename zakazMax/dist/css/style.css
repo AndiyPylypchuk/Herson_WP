@@ -3363,8 +3363,15 @@ header.header {
       font-family: 'HelveticaNeue-Medium', Arial, sans-serif; }
     .nav > li a:hover {
       color: #ff0000; }
-    .nav > li a.active {
-      color: #ff0000; }
+  .nav li.active > a {
+    color: #ff0000; }
+
+@media (min-width: 1200px) {
+  .section-gallery .gallery__item {
+    height: 739px !important; }
+  .section-gallery .gallery__slider {
+    height: 739px !important;
+    max-width: 1108px; } }
 
 @media (max-width: 780px) {
   .nav > li a {
@@ -3930,7 +3937,9 @@ body.active {
     font-family: 'corbel', Arial, sans-serif;
     text-transform: capitalize; }
   .contact__img {
-    margin: 24px 0; }
+    max-width: 1448px;
+    margin: 24px auto;
+    padding: 0 20px; }
   .contact .jicons-text {
     color: #444;
     font-weight: 500;
@@ -3969,6 +3978,9 @@ body.active {
     .contact__form input {
       margin: 6px 0 0;
       width: 80%; }
+    .contact__form dd label {
+      display: inherit;
+      color: red; }
     .contact__form dt.inline, .contact__form dd.inline {
       display: inline-block !important;
       float: left !important;
@@ -4454,7 +4466,9 @@ a.btn_order {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e9d0', endColorstr='#ffffff', GradientType=0 ); }
 
 .services__group {
-  padding-top: 25px; }
+  padding-top: 25px;
+  max-width: 1389px;
+  margin: 0 auto; }
   .services__group ul {
     display: -ms-flexbox;
     display: flex;
@@ -4629,11 +4643,9 @@ a.btn_order {
 
 .services_word {
   padding-bottom: 26px; }
-  .services_word .article__text {
-    width: 300px;
-    margin-left: 26px; }
-    .services_word .article__text p:first-child {
-      padding-bottom: 18px; }
+  .services_word .article .float-left {
+    margin: 0 26px 10px 0;
+    float: left; }
 
 .h3 {
   font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
@@ -4679,9 +4691,6 @@ p {
     padding-top: 45px; }
 
 @media screen and (max-width: 1125px) {
-  .article .flex-row {
-    -ms-flex-direction: column;
-    flex-direction: column; }
   .services_word {
     padding-bottom: 26px; }
     .services_word .article__img {
@@ -4703,8 +4712,9 @@ p {
     font-size: 18px; }
   .services_word {
     padding-bottom: 22px; }
-    .services_word .article__text p:first-child {
-      padding-bottom: 7px; } }
+    .services_word .article .float-left {
+      float: none;
+      margin-right: 0; } }
 
 .main_slider .slider__item {
   position: relative;
