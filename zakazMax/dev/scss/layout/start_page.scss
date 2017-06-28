@@ -133,7 +133,13 @@
 .hide{
 	display: none !important;
 }
-
+@media (max-width: 991px){
+	.start_page{
+		.h2{
+			font-size: 38px;
+		}
+	}
+}
 @media (max-width: 830px){
 	.cover{
 		min-height: 100%;

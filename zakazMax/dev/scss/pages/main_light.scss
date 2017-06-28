@@ -951,3 +951,159 @@ section{
 		right: -300%;
 	}
 }
+@media (min-width: 1349px){
+	.main_slider{
+		.item{
+			&__inner{
+				padding-top: 30px;
+				padding-bottom: 86px;
+			}
+			&__title{
+				font-size: 61px;
+				.h2{
+					color: #7d7d7d;
+					font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
+					font-weight: normal;
+					letter-spacing: 2px;
+					font-size: 61px;
+				}
+				&:before{
+					border-width: 25.5px 0 25.5px 25px;
+				}
+				.subtitle{
+					padding-top: 4px;
+					max-width: 147px;
+					font-size: 15px;
+				}
+			}
+			
+		}
+		.first_img2 .item__contact{
+			padding-top: 346px;
+		}
+	}
+	.box_social{
+		right: 91px;
+		li{
+			margin: 13px;
+		}
+	}
+	a.btn_order{
+		padding: 12px 22px;
+	}
+	.h2_main{
+		font-size: 57px;
+		padding: 48px 0 40px 53px;
+		letter-spacing: -2.5px;
+		&:before{
+			width: 10px;
+			height: 40px;
+			top: 66px;
+		}
+	}
+	.main_services{
+		padding-bottom: 101px;
+	}
+	.info-grafic{
+		.img-man:before{
+			width: 331px;
+			height: 487px;
+			background-size: 344px;
+			position: absolute;
+			left: 224px;
+			top: 31px;
+		}
+		&__content{
+			padding-top: 26px;
+		}
+		&__box{
+			max-width: 481px;
+		}
+		.h2_main{
+			&:before{
+				top: 15px;
+			}
+		}
+		.text_top{
+			letter-spacing: 0;
+			font-size: 17px;
+		}
+		.text_bottom{
+			font-size: 15px;
+    	max-width: 225px;
+    	padding-bottom: 16px;
+    	letter-spacing: 0.5px;					
+		}
+		&__wrap{
+			&:after{
+				border-bottom: 978px solid rgba(241, 219, 155, 0.67);
+				left: -4%;
+				top: -30%;
+			}
+			padding-top: 22px;
+			margin-right: 42px;
+			.img{
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.main_gallery_bg{
+		height: 1077px;
+		&:before{
+			top: -341px;
+		}
+	}
+	.main_gallery{
+		&__subtext{
+			font-size: 17px;
+    	max-width: 81%;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+			padding: 2px 59px 36px;
+		}
+		.wrap-section-nav_top{
+			top: -34%;
+		}
+		&__content{
+			margin-top: 311px;
+			padding-bottom: 130px;
+		}
+		.gallery-block{
+			.gallery{
+				ul{
+					li{
+						max-width: 196px;
+					}
+				}
+			}
+		}
+	}
+	.clients__items{
+		margin: 24px 70px 81px;
+	}
+	.new{
+		.grid-wrap{
+			.art{
+				.info2{
+					font-size: 12px;
+				}
+				&__info{
+					font-size: 16px;
+					font-weight: 600;
+					;letter-spacing: 0.5px;
+					margin: 3px 0 10px 0;
+				}
+				&__wrap{
+					 padding: 24px 31px 24px 26px;
+				}
+				&__text{
+					letter-spacing: -0.5px;
+					font-size: 17px;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+}

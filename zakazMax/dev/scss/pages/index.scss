@@ -57,9 +57,7 @@
 		}
 		.item.revers{
 			flex-direction: row-reverse;
-			&__title{
-				text-align: right;
-			}
+			text-align: right;
 		}
 	}
 	&__btn{
@@ -272,5 +270,46 @@
 		.item{
 			width: 100%;
 		}
+	}
+}
+@media (min-width: 1349px){
+	.h1{
+		font-size: 74px;
+		padding-left: 60px;
+	}
+	.h2{
+		font-size: 60px;
+		font-weight: 500;
+	}
+	.services{	
+		&__group{
+			max-width: 100%;
+			padding-top: 22px;
+		}
+		&__btn{
+			padding: 44px 0 72px;
+		}
+		.item{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			text-decoration: none;
+			color: #000;
+			font-weight: 700;
+			background-color: #fff;
+			transition-duration: .5s;
+			div{
+				width: 186px;
+			}
+			&__title{
+				font-size: 20px;
+			}
+		}
+	}
+	.btn_lg {
+    padding: 10px 60px;
+	}
+	.btn {
+    font-size: 23px;
 	}
 }

@@ -26,6 +26,7 @@
 @import 'layout/gallery';
 @import 'layout/start_page';
 @import 'layout/order_form';
+@import 'layout/main';
 //*********************************************
 @import 'pages/index';
 @import 'pages/services_word';
@@ -42,6 +43,21 @@
 // 			width: 1340px;
 // 	}
 // }
+.page-error{
+	background-color: #cfc8c8;
+	h1{
+		font-size: 213px;
+		text-align: center;
+		align-items: center;
+		height: calc(100vh - 155px);
+		display: flex;
+		opacity: 0.5;
+		justify-content: center;
+	}
+}
+.over{
+	overflow: hidden;
+}
 @media (max-width: 1700px) {
 	.container {
 		max-width: 1600px;
