@@ -4,10 +4,11 @@ html(lang="ru").no-js
 	head
 		include ../chunks/head.pug
 	body
-		.header_main-wrapper
-			include ../chunks/header.pug
-		.page-body#page-body
-			include ../chunks/main_Ra.pug
-		include ../chunks/footer.pug
+		.page-wrapper.main.main-ra#page-wrapper
+			.header_main-wrapper
+				include ../chunks/header.pug
+			.page-body#page-body
+				include ../chunks/main_Ra.pug
+			include ../chunks/footer.pug
 
 		include ../chunks/scripts.pug

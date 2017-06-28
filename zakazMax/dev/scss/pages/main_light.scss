@@ -958,6 +958,21 @@ section{
 				padding-top: 30px;
 				padding-bottom: 86px;
 			}
+			&__contact{
+				padding-top: 127px;
+				.phone{
+					padding-bottom: 25px;
+					font-size: 31px;
+					&:before{
+						top: -42px;
+						left: -4px;
+						height: 43px;
+						width: 28px;
+						background-position: -423px -78px;
+						background-size: inherit;
+					}
+				}
+			}
 			&__title{
 				font-size: 61px;
 				.h2{
@@ -981,6 +996,9 @@ section{
 		.first_img2 .item__contact{
 			padding-top: 346px;
 		}
+		.first_img .item__title{
+			margin-bottom: 276px;
+		}
 	}
 	.box_social{
 		right: 91px;
@@ -1003,6 +1021,44 @@ section{
 	}
 	.main_services{
 		padding-bottom: 101px;
+	}
+	.main-ra{
+		.main_services{
+			padding-bottom: 0;
+		}
+		.wrap-section-nav{
+			bottom: 59px;
+		}
+		.services_more{
+			&__wrap{
+				padding-bottom: 157px;
+			}
+			&__title{
+				padding-top: 24px;
+				font-size: 24px;
+				font-weight: 600;
+			}
+			.flex-row{
+				align-items: flex-start;
+			}
+			.h2_main{
+				padding: 40px 0 46px 53px;
+				&:before{
+					top: 53px;
+				}
+			}
+		}
+		.main_gallery_bg {
+			height: 962px;
+		}
+		.main_gallery{
+			&__content{
+				margin-top: 120px;
+			}
+			.wrap-section-nav{
+				bottom: 37px;
+			}
+		}
 	}
 	.info-grafic{
 		.img-man:before{
@@ -1030,9 +1086,9 @@ section{
 		}
 		.text_bottom{
 			font-size: 15px;
-    	max-width: 225px;
-    	padding-bottom: 16px;
-    	letter-spacing: 0.5px;					
+			max-width: 225px;
+			padding-bottom: 16px;
+			letter-spacing: 0.5px;					
 		}
 		&__wrap{
 			&:after{
@@ -1058,7 +1114,7 @@ section{
 	.main_gallery{
 		&__subtext{
 			font-size: 17px;
-    	max-width: 81%;
+			max-width: 81%;
 			font-weight: bold;
 			letter-spacing: 0.6px;
 			padding: 2px 59px 36px;

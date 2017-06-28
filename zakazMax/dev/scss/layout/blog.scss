@@ -63,3 +63,23 @@
 		}
 	}
 }
+@media (min-width: 1349px){
+	.section-blog {
+		.item{
+			padding: 22px 15px 50px 0;
+			.btn_lg{
+				padding: 11px 55px;
+			}
+			&__title{
+				font-size: 37px;
+			}
+			&__subtitle{
+				font-size: 22px;
+				padding: 5px 0 0;
+			}
+			&__text{
+				font-size: 18px;
+			}
+		}
+	}
+}

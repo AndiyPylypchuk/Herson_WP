@@ -158,3 +158,43 @@
 		}
 	}
 }
+@media (min-width: 1349px){
+	.section_article{
+		.container{
+			max-width: 1600px;
+		}
+		.main-article{
+			padding-right: 10%;
+			p.numblocks{
+				line-height: 1.5;
+				font-size: 17px;
+			}
+			&__subtitle{
+				line-height: 1.5;
+			}
+			&__text{
+				p{
+					font-size: 19px;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+	.box{
+		max-width: 239px;
+		.search input{
+			font-size: 16px;
+			height: 40px;
+		}
+		.header{
+			font-size: 26px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}
