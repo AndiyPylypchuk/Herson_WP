@@ -16,12 +16,17 @@
             <div class="wrap-nav">
               <div class="logo"><a href="#"></a></div>
               <div class="mob-menu js-wrap-mob-menu"><i class="fa fa-reorder js-open-menu_mob"></i>
-                <ul class="js-mob-menu">
+                <ul class="nav navbar-nav">
                   <li><a href="#">главная</a></li>
-                  <li><a class="active js-show-mobile-sub-menu" href="#">услуги</a>
-                    <ul class="mobile-menu__down-menu">
+                  <li class="active dropdown"><a class="dropdown-toggle js-show-dropdown" href="#">услуги</a>
+                    <ul class="dropdown-menu js-submenu">
                       <li><a href="#">наружная реклама</a></li>
-                      <li><a href="#">доп. услуги</a></li>
+                      <li><a class="js-show-mobile-sub-menu" href="#">доп. услуги</a>
+                        <ul class="mobile-menu__down-menu">
+                          <li><a href="#">доп. услуга</a></li>
+                          <li><a href="#">доп. услуги</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li><a href="#">галерея</a></li>
@@ -35,8 +40,18 @@
                   <li><a href="#">главная</a></li>
                   <li class="active dropdown"><a class="dropdown-toggle js-show-dropdown" href="#">услуги</a>
                     <ul class="dropdown-menu js-submenu">
-                      <li><a href="#">наружная реклама</a></li>
-                      <li><a href="#">доп. услуги</a></li>
+                      <li class="dropdown-submenu"><a class="dropdown-toggle js-show-dropdown" href="#">наружная реклама</a>
+                        <ul class="dropdown-menu js-submenu">
+                          <li><a href="#">доп. услуга</a></li>
+                          <li><a href="#">доп. услуги</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a class="dropdown-toggle js-show-dropdown" href="#">доп. услуги</a>
+                        <ul class="dropdown-menu js-submenu">
+                          <li><a href="#">доп. услуга</a></li>
+                          <li><a href="#">доп. услуги</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li><a href="#">галерея</a></li>

@@ -51,7 +51,7 @@ $(function() {
 });
 
 $(document).ready(function(){
-
+  document.getElementById("s").setAttribute("placeholder", "Search...");
  $('.js-slider-top').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -210,41 +210,53 @@ function initMap() {
 
 //navigation submenu
 
-var dropdown = (function() {
-  var $dropdownlink = $('.js-show-dropdown');
-  var $dropdown = $('.js-submenu');
+// var dropdown = (function() {
+//   var $dropdownlink = $('.js-show-dropdown');
+//   var $dropdown = $('.js-submenu');
 
-  $dropdownlink.on('mouseover', function() {
-      $dropdown.fadeIn(300);
-      // $dropdown.css({
-      //     'top': $('.header').outerHeight(),
-      // });
-  });
+//   $dropdownlink.on('mouseover', function() {
+//       $dropdown.fadeIn(300);
+//       // $dropdown.css({
+//       //     'top': $('.header').outerHeight(),
+//       // });
+//   });
 
-  $dropdownlink.on('mouseout', function() {
-      setTimeout(function() {
-          if ($('.js-submenu:hover').length != 0) {
-              // do something ;)
-          } else {
-              hidemenu();
-          }
-      }, 500)
-  });
+//   $dropdownlink.on('mouseout', function() {
+//       setTimeout(function() {
+//           if ($('.js-submenu:hover').length != 0) {
+//               // do something ;)
+//           } else {
+//               hidemenu();
+//           }
+//       }, 500)
+//   });
 
-  $dropdown.on('mouseout', function() {
+//   $dropdown.on('mouseout', function() {
 
-      if ($('.js-submenu:hover').length != 0) {
-          // do something ;)
-      } else {
-          hidemenu();
-      }
-  });
+//       if ($('.js-submenu:hover').length != 0) {
+//           // do something ;)
+//       } else {
+//           hidemenu();
+//       }
+//   });
 
-  function hidemenu() {
-      $dropdown.fadeOut(300);
-  }
+//   function hidemenu() {
+//       $dropdown.fadeOut(300);
+//   }
 
-})();
+// })();
+
+// $('ul.nav li.dropdown').hover(function() {
+//   console.log($(this).children().eq(1));
+//   $(this).children().eq(1).stop(true, true).delay(200).fadeIn(500);
+// }, function() {
+//   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
+// });
+// $('ul.nav li.dropdown-submenu').hover(function() {
+//   $(this).children().eq(1).stop(true, true).delay(200).fadeIn(500);
+// }, function() {
+//   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
+// });
 
 $('.js-show-mobile-sub-menu').on('click', function(e) {
     e.preventDefault();

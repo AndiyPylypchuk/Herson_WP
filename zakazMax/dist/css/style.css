@@ -3329,8 +3329,11 @@ header.header {
   text-align: center;
   padding-top: 7px;
   font-size: 0; }
+  .nav li.dropdown > ul, .nav li.dropdown-submenu > ul {
+    display: none; }
+  .nav li.dropdown:hover > ul, .nav li.dropdown-submenu:hover > ul {
+    display: block; }
   .nav li > ul {
-    display: none;
     position: absolute;
     z-index: 4;
     right: 50%;
@@ -3365,6 +3368,16 @@ header.header {
       color: #ff0000; }
   .nav li.active > a {
     color: #ff0000; }
+  .nav li.dropdown-submenu {
+    position: relative; }
+    .nav li.dropdown-submenu > .dropdown-menu {
+      position: absolute;
+      top: 15px;
+      left: 101px;
+      width: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+      border-radius: 0 6px 6px 6px; }
 
 @media (min-width: 1200px) {
   .section-gallery .gallery__item {
@@ -3597,17 +3610,26 @@ body.active {
       color: #e74c3c; }
   .box ul li:last-child:after {
     border-bottom: none; }
-  .box .search input {
+  .box .searchform > div {
+    padding-top: 15px; }
+  .box .searchform input {
+    font-size: 16px;
+    height: 40px;
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 2px;
     font-size: 14px;
     font-weight: 400;
     color: #000;
-    height: 28px;
     line-height: 29px;
     max-width: 100% !important;
     padding: 0 14px; }
+  .box .searchform label {
+    display: none; }
+  .box .searchform input#searchsubmit {
+    visibility: hidden;
+    position: absolute;
+    left: 0; }
 
 @media screen and (max-width: 1125px) {
   .box {
@@ -4023,9 +4045,6 @@ body.active {
       line-height: 1.5; }
   .box {
     max-width: 239px; }
-    .box .search input {
-      font-size: 16px;
-      height: 40px; }
     .box .header {
       font-size: 26px; }
     .box ul li a {

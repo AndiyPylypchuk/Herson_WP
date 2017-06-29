@@ -47,8 +47,13 @@
 			}
 		}
 	}
-	.search{
+	.searchform{
+		> div{
+			padding-top: 15px;
+		}
 		input{
+			font-size: 16px;
+			height: 40px;
 			box-sizing: border-box;
 			border: 1px solid #ddd;
 			-webkit-border-radius: 2px;
@@ -57,10 +62,19 @@
 			font-size: 14px;
 			font-weight: 400;
 			color: #000;
-			height: 28px;
+			// height: 28px;
 			line-height: 29px;
 			max-width: 100%!important;
 			padding: 0 14px;
+		}
+		label{
+			display: none;
+		}
+		input#searchsubmit{
+			visibility: hidden;
+			position: absolute;
+			left: 0;
+
 		}
 	}
 }

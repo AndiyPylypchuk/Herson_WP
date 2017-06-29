@@ -51,7 +51,8 @@ section.section_article
 								a(href="#") Февраль 2017
 				.box
 					h4.header Search
-					.content
-						form
-							.search
-								input(name="searchword" placeholder="Search...")
+					form.searchform
+						div
+							label(for="s").screen-reader-text dc
+							input#s(name="s" type="text" value)
+							input#searchsubmit(value="Search")

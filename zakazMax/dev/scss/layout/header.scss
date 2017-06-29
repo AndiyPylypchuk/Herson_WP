@@ -72,8 +72,16 @@ header.header{
 	text-align: center;
 	padding-top: 7px;
 	font-size: 0;
+	li.dropdown > ul, li.dropdown-submenu > ul {
+		display: none;
+	}
+
+	li.dropdown:hover, li.dropdown-submenu:hover{
+		>ul{
+			display: block;
+		}
+	}
 	li > ul{
-			display: none;
 			position: absolute;
 			z-index: 4;
 			right: 50%;
@@ -116,6 +124,20 @@ header.header{
 		>a{
 			color: #ff0000;
 		}
+	}
+	li.dropdown-submenu{
+		position: relative;
+		>.dropdown-menu{
+			position: absolute;
+			top: 15px;
+	    left: 101px;
+	    width: 100%;
+	    margin-top: -6px;
+	    margin-left: -1px;
+	    -webkit-border-radius: 0 6px 6px 6px;
+	    -moz-border-radius: 0 6px 6px;
+	    border-radius: 0 6px 6px 6px;
+	  }
 	}
 }
 @media (min-width: 1200px){
