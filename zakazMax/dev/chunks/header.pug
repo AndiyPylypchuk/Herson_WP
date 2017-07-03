@@ -1,34 +1,13 @@
 header.wrapper.header#header
 	.container
-		.wrap-nav
-			.logo
-				a(href="#")
-			.mob-menu.js-wrap-mob-menu
-				i.fa.fa-reorder.js-open-menu_mob
-				ul.nav.navbar-nav
-					li
-						a(href="#") главная
-					li.active.dropdown
-						a.dropdown-toggle.js-show-dropdown(href="#") услуги
-						ul.dropdown-menu.js-submenu
-							li
-								a(href="#") наружная реклама
-							li
-								a(href="#").js-show-mobile-sub-menu доп. услуги
-								ul.mobile-menu__down-menu
-									li
-										a(href="#") доп. услуга
-									li
-										a(href="#") доп. услуги
-					li
-						a(href="#") галерея
-					li
-						a(href="#") блог
-					li
-						a(href="#") контакты
-					li
-						a(href="#") магазин
-			.main-menu
+		nav.navbar.navbar-default.wrap-nav(role="navigation")
+			.navbar-header
+				button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1").navbar-toggle
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.logo
 				ul.nav.navbar-nav
 					li
 						a(href="#") главная
