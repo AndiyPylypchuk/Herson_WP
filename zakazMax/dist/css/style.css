@@ -3421,7 +3421,13 @@ header.header {
       header.header .navbar-default .navbar-nav li > ul.dropdown-menu {
         left: 0px; }
         header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li {
-          width: 100%; }
+          max-width: 100%; }
+          header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > ul.dropdown-menu {
+            z-index: 5; }
+            header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > ul.dropdown-menu > li {
+              max-width: 100%;
+              width: 90%;
+              background-color: #333; }
   .mob-menu.active .fa-reorder:before {
     content: "\f00d"; }
   > li.dropdown:hover > ul, > li.dropdown > ul > li:hover > ul {

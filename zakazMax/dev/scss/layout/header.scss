@@ -195,7 +195,15 @@ header.header{
 				li > ul.dropdown-menu{
 					left: 0px;
 					> li{
-						width: 100%;
+						max-width: 100%;
+						> ul.dropdown-menu{
+							z-index: 5;
+							> li{
+								max-width: 100%;
+								width: 90%;
+								background-color: #333;
+							}
+						}
 					}
 				}
 			}
