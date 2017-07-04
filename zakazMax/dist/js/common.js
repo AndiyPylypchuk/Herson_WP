@@ -258,9 +258,9 @@ function initMap() {
 //   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
 // });
 
-$('.js-show-mobile-sub-menu').on('click', function(e) {
+$('ul.nav li.dropdown').on('click', function(e) {
     e.preventDefault();
-    $(this).next('.mobile-menu__down-menu').slideToggle();
+    $(this).children('.dropdown-menu').slideToggle();
     $(this).toggleClass('active');
 
 });
