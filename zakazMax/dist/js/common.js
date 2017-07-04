@@ -258,7 +258,13 @@ function initMap() {
 //   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
 // });
 
-$('ul.nav li.dropdown').on('click', function(e) {
+$('ul.nav > li.dropdown').on('click', function(e) {
+    e.preventDefault();
+    $(this).children('.dropdown-menu').slideToggle();
+    $(this).toggleClass('active');
+
+});
+$('ul.nav > li.dropdown > ul > li.dropdown').on('click', function(e) {
     e.preventDefault();
     $(this).children('.dropdown-menu').slideToggle();
     $(this).toggleClass('active');

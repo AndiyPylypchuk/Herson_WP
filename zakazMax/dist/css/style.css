@@ -3419,22 +3419,30 @@ header.header {
       header.header .navbar-default .navbar-nav li {
         border-bottom: 1px solid #888; }
       header.header .navbar-default .navbar-nav li > ul.dropdown-menu {
-        left: 0px; }
+        left: 0px;
+        position: relative; }
         header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li {
-          max-width: 100%; }
+          max-width: 100%;
+          width: 100%; }
           header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > ul.dropdown-menu {
             z-index: 5; }
             header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > ul.dropdown-menu > li {
               max-width: 100%;
               width: 90%;
-              background-color: #333; }
-  .mob-menu.active .fa-reorder:before {
-    content: "\f00d"; }
-  > li.dropdown:hover > ul, > li.dropdown > ul > li:hover > ul {
-    display: none; } }
+              background-color: #333; } }
+
+header.header .navbar-default .navbar-nav > li.dropdown:hover > ul, header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
+  display: none; }
 
 .dropdown-menu.active {
   display: block; }
+
+header.header .navbar-default .navbar-nav > li.dropdown > ul > li.dropdown.active > ul {
+  position: relative;
+  left: inherit;
+  margin: 2px 0 0;
+  width: 100%;
+  text-align: center; }
 
 body.active {
   overflow: hidden; }
