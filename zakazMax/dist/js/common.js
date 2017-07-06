@@ -51,7 +51,9 @@ $(function() {
 });
 
 $(document).ready(function(){
-  document.getElementById("s").setAttribute("placeholder", "Search...");
+  var elementSearch = document.getElementById("s");
+  if(elementSearch)
+    elementSearch.setAttribute("placeholder", "Search...");
  $('.js-slider-top').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -196,6 +198,15 @@ var toggleMenuMob = (function(){
   });
 
 })();
+
+function slowScroll(id){
+    var offset= 0;
+    $('html, body').animate ({
+        scrollTop: $(id).offset().top - offset
+    }, 500);
+    return false;
+}
+
 function initMap() {
   var uluru = {lat: 46.655655, lng: 32.606664};
   var map = new google.maps.Map(document.getElementById('map'), {

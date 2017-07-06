@@ -58,6 +58,9 @@ ul li{
 a{
 	text-decoration: none;
 	cursor: pointer;
+	&:hover:focus:active{
+		text-decoration: none;
+	}
 }
 body{
 	font-size: 18px;
