@@ -3318,6 +3318,13 @@ header.header {
   padding: 7px 0; }
   header.header .navbar-header {
     float: none; }
+  header.header .navbar-brand .logo {
+    height: 49px; }
+  header.header .navbar-wrap {
+    display: -ms-flexbox;
+    display: flex; }
+  header.header .navbar-collapse {
+    width: calc( 100% - 77px); }
   header.header .navbar-default {
     background: transparent;
     border: transparent; }
@@ -3325,7 +3332,7 @@ header.header {
       text-align: center;
       padding-top: 7px;
       font-size: 0;
-      width: calc( 100% - 77px);
+      width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -3371,22 +3378,24 @@ header.header {
             padding: 10px; }
             header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > a:hover {
               color: #ff0000; }
-      header.header .navbar-default .navbar-nav > li.dropdown:hover > ul, header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
-        display: none; }
-      header.header .navbar-default .navbar-nav > li.dropdown:hover > ul, header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
-        display: block; }
-      header.header .navbar-default .navbar-nav li.dropdown {
-        position: relative; }
-      header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
-        position: absolute;
-        top: 15px;
-        left: 100%;
-        width: 100%;
-        margin-top: -6px;
-        margin-left: -1px;
-        border-radius: 0 6px 6px 6px; }
-    header.header .navbar-default .navbar-toggle {
-      border: none; }
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li.dropdown:hover > ul, .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
+    display: none; }
+  .navbar-default .navbar-nav > li.dropdown:hover > ul, .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
+    display: block; }
+  .navbar-default .navbar-nav li.dropdown {
+    position: relative; }
+  .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    width: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px; }
+  .navbar-default .navbar-toggle {
+    border: none; } }
 
 @media (min-width: 1200px) {
   .section-gallery .gallery__item {
@@ -3399,16 +3408,21 @@ header.header {
   .nav > li a {
     padding: 15px 20px; } }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .main-menu {
     display: none; }
+  .navbar-wrap {
+    display: block; }
+  header.header .navbar-header {
+    width: 100%; }
   header.header .navbar-default {
     background: transparent;
     border-color: transparent; }
     header.header .navbar-default .navbar-collapse {
       border-color: transparent;
       box-shadow: none;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
     header.header .navbar-default .navbar-nav {
       display: -ms-flexbox;
       display: flex;
@@ -3419,7 +3433,8 @@ header.header {
       header.header .navbar-default .navbar-nav li {
         border-bottom: 1px solid #888; }
       header.header .navbar-default .navbar-nav li > ul.dropdown-menu {
-        left: 0px;
+        left: inherit;
+        text-align: center;
         position: relative; }
         header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li {
           max-width: 100%;
@@ -3429,23 +3444,19 @@ header.header {
             header.header .navbar-default .navbar-nav li > ul.dropdown-menu > li > ul.dropdown-menu > li {
               max-width: 100%;
               width: 90%;
-              background-color: #333; } }
-
-header.header .navbar-default .navbar-nav > li.dropdown:hover > ul, header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
-  display: none; }
-
-.dropdown-menu.active {
-  display: block; }
-
-header.header .navbar-default .navbar-nav > li.dropdown > ul > li.dropdown.active > ul {
-  position: relative;
-  left: inherit;
-  margin: 2px 0 0;
-  width: 100%;
-  text-align: center; }
-
-body.active {
-  overflow: hidden; }
+              background-color: #333; }
+  header.header .navbar-default .navbar-nav > li.dropdown:hover > ul, header.header .navbar-default .navbar-nav > li.dropdown > ul > li:hover > ul {
+    display: none; }
+  .dropdown-menu.active {
+    display: block; }
+  header.header .navbar-default .navbar-nav > li.dropdown > ul > li.dropdown.active > ul {
+    position: relative;
+    left: inherit;
+    margin: 0;
+    width: 100%;
+    text-align: center; }
+  body.active {
+    overflow: hidden; } }
 
 @media (min-width: 1349px) {
   .main-menu {
