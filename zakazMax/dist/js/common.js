@@ -50,105 +50,8 @@ $(function() {
 
 });
 
-
-
-var toggleMenuMob = (function(){
-
-  var $btnOpen = $(".js-open-menu_mob");
-  var $mobMenu = $('.js-mob-menu');
-  var $wrapMobMenu = $('.js-wrap-mob-menu');
-
-  $btnOpen.on("click", function(e){
-    $(this).toggleClass('active');
-    $mobMenu.toggleClass('active');
-    $wrapMobMenu.toggleClass('active');
-    $('body').toggleClass('active');
-  });
-
-})();
-
-function initMap() {
-  var uluru = {lat: 46.655655, lng: 32.606664};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-};
-
-//navigation submenu
-
-// var dropdown = (function() {
-//   var $dropdownlink = $('.js-show-dropdown');
-//   var $dropdown = $('.js-submenu');
-
-//   $dropdownlink.on('mouseover', function() {
-//       $dropdown.fadeIn(300);
-//       // $dropdown.css({
-//       //     'top': $('.header').outerHeight(),
-//       // });
-//   });
-
-//   $dropdownlink.on('mouseout', function() {
-//       setTimeout(function() {
-//           if ($('.js-submenu:hover').length != 0) {
-//               // do something ;)
-//           } else {
-//               hidemenu();
-//           }
-//       }, 500)
-//   });
-
-//   $dropdown.on('mouseout', function() {
-
-//       if ($('.js-submenu:hover').length != 0) {
-//           // do something ;)
-//       } else {
-//           hidemenu();
-//       }
-//   });
-
-//   function hidemenu() {
-//       $dropdown.fadeOut(300);
-//   }
-
-// })();
-
-// $('ul.nav li.dropdown').hover(function() {
-//   console.log($(this).children().eq(1));
-//   $(this).children().eq(1).stop(true, true).delay(200).fadeIn(500);
-// }, function() {
-//   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
-// });
-// $('ul.nav li.dropdown-submenu').hover(function() {
-//   $(this).children().eq(1).stop(true, true).delay(200).fadeIn(500);
-// }, function() {
-//   $(this).children().eq(1).stop(true, true).delay(200).fadeOut(500);
-// });
-
-$('ul.nav > li.dropdown').on('click', function(e) {
-    e.preventDefault();
-    $(this).children('.dropdown-menu').slideToggle();
-    $(this).toggleClass('active');
-
-});
-$('ul.nav > li.dropdown > ul > li.dropdown').on('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    $(this).children('.dropdown-menu').slideToggle();
-    $(this).toggleClass('active');
-
-});
-
 $(document).ready(function(){
-  if($("body").find('searchform')){
-    $("#s").attr("placeholder", "Search...");
-  }
-  
-
+  document.getElementById("s").setAttribute("placeholder", "Search...");
  $('.js-slider-top').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -220,67 +123,105 @@ $(document).ready(function(){
   // });
 
   //validation
-  $('#orderForm').validate({
-    rules: {
-      name: {
-        required : true,
-        minlength : 2
-      },
-      email: {
-        required: true,
-        email: true
-      },
-      theme: {
-        required : true
-      }
-    },
-    messages: {
-      name: {
-        required: "Введите имя",
-        minlength: "Ваше имя должно иметь больше 2 символов"
-      },
-      email: {
-        required: "Нам нужен email, что бы связаться с вами",
-        email: "Ваш email должен быть в таком формате name@domain.com"
-      },
-      theme: {
-        required: "Укажите тему сообщения"
-      }
-    }
-  });
 
-  $('#orderFormContact').validate({
-    rules: {
-      name: {
-        required : true,
-        minlength : 2
+    $('#orderForm').validate({
+      rules: {
+        name: {
+          required : true,
+          minlength : 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        theme: {
+          required : true
+        }
       },
-      email: {
-        required: true,
-        email: true
-      },
-      theme: {
-        required : true
+      messages: {
+        name: {
+          required: "Введите имя",
+          minlength: "Ваше имя должно иметь больше 2 символов"
+        },
+        email: {
+          required: "Нам нужен email, что бы связаться с вами",
+          email: "Ваш email должен быть в таком формате name@domain.com"
+        },
+        theme: {
+          required: "Укажите тему сообщения"
+        }
       }
-    },
-    messages: {
-      name: {
-        required: "Введите имя",
-        minlength: "Ваше имя должно иметь больше 2 символов"
+    });
+    $('#orderFormContact').validate({
+      rules: {
+        name: {
+          required : true,
+          minlength : 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        theme: {
+          required : true
+        }
       },
-      email: {
-        required: "Нам нужен email, что бы связаться с вами",
-        email: "Ваш email должен быть в таком формате name@domain.com"
-      },
-      theme: {
-        required: "Укажите тему сообщения"
+      messages: {
+        name: {
+          required: "Введите имя",
+          minlength: "Ваше имя должно иметь больше 2 символов"
+        },
+        email: {
+          required: "Нам нужен email, что бы связаться с вами",
+          email: "Ваш email должен быть в таком формате name@domain.com"
+        },
+        theme: {
+          required: "Укажите тему сообщения"
+        }
       }
-    }
-  });
-
-  if($("body").find('js-page-maps')){
-    initMap();
-  }
-
-
+    });
 });
+
+var toggleMenuMob = (function(){
+
+  var $btnOpen = $(".js-open-menu_mob");
+  var $mobMenu = $('.js-mob-menu');
+  var $wrapMobMenu = $('.js-wrap-mob-menu');
+
+  $btnOpen.on("click", function(e){
+    $(this).toggleClass('active');
+    $mobMenu.toggleClass('active');
+    $wrapMobMenu.toggleClass('active');
+    $('body').toggleClass('active');
+  });
+
+})();
+function initMap() {
+  var uluru = {lat: 46.655655, lng: 32.606664};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+};
+
+  $('ul.nav > li.dropdown').on('click', function(e) {
+      e.preventDefault();
+      $(this).children('.dropdown-menu').slideToggle();
+      $(this).toggleClass('active');
+  });
+  $('ul.nav > li.dropdown > ul > li.dropdown').on('click', function(e) {
+    if ($(window).width() < 768) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(this).children('.dropdown-menu').slideToggle();
+      $(this).toggleClass('active');
+    }
+  });
+  
+$(window).on('resize', function(){
+   $('.dropdown-menu').css({'display':''} );
+})
