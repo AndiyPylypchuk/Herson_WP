@@ -67,6 +67,22 @@ a.btn_order{
 		left: 0px;
 	}
 }
+.gallery__slider-nav{
+	.slick-list{
+		width: 75%;
+		margin: 0 auto;
+	}
+	.slick-track{
+		margin: 0 auto !important;
+	}
+	.slick-slide{
+		max-width: 186px !important;
+		margin: 5px;
+		height: 125px;
+		display: flex;
+		align-items: center;
+	}
+}
 @media (max-width: 991px){
 	.section-gallery{
 		.gallery{

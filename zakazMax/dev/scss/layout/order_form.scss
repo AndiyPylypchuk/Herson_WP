@@ -54,9 +54,15 @@
 	}
 }
 @media (min-width: 1349px){
+	.order-form_booking{
+		.contact{
+			&__form{
+				max-width: 525px;
+			}
+		}
+	}
 	.contact{
 		&__form{
-			max-width: 525px;
 			width: 100%;
 			input, textarea{
 				font-size: 18px;

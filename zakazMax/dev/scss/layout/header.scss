@@ -89,6 +89,7 @@ header.header{
 					font-weight: bold;
 					display: block;
 					padding: 15px 22px;
+					white-space: normal;
 					transition: all 0.3s ease-out;
 					background-color: transparent;
 					font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
@@ -185,6 +186,10 @@ header.header{
 		.navbar-header{
 			width: 100%;
 		}
+		.navbar-wrap{
+			display: flex;
+			flex-direction: column;
+		}
 		.navbar-default{
 			background: transparent;
 			border-color: transparent;
@@ -207,6 +212,7 @@ header.header{
 					left: inherit;
 					text-align: center;
 					position: relative;
+					width: 100%;
 					> li{
 						max-width: 100%;
 						width: 100%;
