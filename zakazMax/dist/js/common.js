@@ -54,7 +54,7 @@ $(document).ready(function(){
   var elementSearch = document.getElementById("s");
   if(elementSearch)
     elementSearch.setAttribute("placeholder", "Search...");
-
+  $("[data-fancybox]").fancybox();
  $('.js-slider-top').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
